@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campaign Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Campaign Manager -->
+    <link rel="stylesheet" href="css/cm.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+  </head>
+  <body>
+
+  	<!-- Primary Navbar -->
+  	<nav class="navbar navbar-default" role="navigation" id="primary-navbar">
+  	  <a class="navbar-brand" id="ecosystem-name" href="#">Mayall</a>
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <!--<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>-->
+	        </li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span></a></li>
+	      	<!--
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Maxime veut rejoindre votre communauté</p>
+				  </a>
+				</li>
+	            <li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Marc vous a envoyé un message</p>
+				  </a>
+				</li>
+				<li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Lerem Ipsum</p>
+				  </a>
+				</li>
+				<li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Dolor Sit amen</p>
+				  </a>
+				</li>
+	          </ul>
+	        </li>
+	    	-->
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><!--<span class="glyphicon glyphicon-user"></span>-->Se connecter</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Secondary navbar -->
+	<nav class="navbar navbar-default" role="navigation" id="secondary-navbar">
+	<a class="navbar-brand" id="application-name" href="#">Campaign Manager</a>
+	  <div class="container-fluid">
+	    <!-- Toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+		      	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span></a>
+		      	<ul class="dropdown-menu">
+		            <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Nouveau projet</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#"><span class="glyphicon glyphicon-link"></span> Nouvelle communauté</a></li>
+		        </ul>
+	        </li>
+	        <li><a href="#"><span class="glyphicon glyphicon-globe"></span></a></li>
+	        <li><a href="#"><span class="glyphicon glyphicon-fire"></span></a></li>
+	        <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<!-- Home -->
+	<div class="row" id="home-section1">
+	  <div class="col-sm-12">
+	  	<h1>Pour une science ouverte et participative</h1>
+	  	<p>Nous lançons la première campagne massive de recyclage de matériel de laboratoire afin de diffuser les savoir et de permettre à tout de bénéficier de  prototyper leurs rêves</p>
+	  	<button type="button" class="btn btn-success btn-lg">Rejoindre la campagne</button>
+	  </div>
+	</div>
+
+	<div class="row" id="home-section2">
+
+	  <h2>Comment nous aider ?</h2>
+
+	  <div class="col-sm-12">
+
+	  	<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-10" id="roles">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-3">
+					  	<div class="panel panel-info" id="role-porteur">
+					  	  <div class="panel-heading">Porteur de Paillasse</div>
+						  <div class="panel-body">
+						    <a href="#" class="thumbnailx130">
+				    		</a>
+				    		<p>Devenez absassadeur du réseau Paillasse et fondez un Open Lab dans votre région</p>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+					  	<div class="panel panel-info" id="role-donateur">
+					  	  	<div class="panel-heading">Donateur</div>
+						  	<div class="panel-body">
+						    <a href="#" class="thumbnailx130">
+				    		</a>
+				    		<p>Vous avez du matériel que vous ou votre laboratoire n'utilisez plus ? Offrez lui une seconde vie et faites une bonne action !</p>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+					  	<div class="panel panel-info" id="role-collecteur">
+					  	  	<div class="panel-heading">Collecteur</div>
+						  	<div class="panel-body">
+						    	<a href="#" class="thumbnailx130">
+				    			</a>
+				    			<p>Vous avez un moyens de transport et un peu de temps à offrir ? Aider nous à récupérer les trésors de nos généreux donateurs !</p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+					  	<div class="panel panel-info" id="role-stockeur">
+					  		<div class="panel-heading">Stockeur</div>
+						  	<div class="panel-body">
+						    	<a href="#" class="thumbnailx130">
+				    			</a>
+				    			<p>Vous avez un peu d'espace libre ? Pourquoi ne pas en faire une caverne d'Ali Baba temporaire ?</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- .row -->
+
+	  </div><!-- .col-sm-12 -->
+	
+	</div>
+
+	<div class="row" id="home-section3">
+		<div class="col-sm-10">
+		  <div class="row">
+		  	<div class="col-sm-12">
+		  		<h2>Soyez mobiles</h2>
+		  	</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm-6">
+			  <div class="row">
+			  	<div class="col-sm-12">
+			  	  <img src="images/all-flat-devices-templates.png" alt="Soyez mobiles">
+			  	</div>
+			  </div>
+			</div>
+			<div class="col-sm-6">
+			  <div class="row" id="download-app">
+			  	<div class="col-sm-12">
+			  	  <h3>Téléchargez l'application</h3>
+			  	  <ul>
+			  	  	<li><a href="#"><img src="images/google-play-badge.png" alt="Télécharger sur Google Play"></a></li>
+			  	  	<li><a href="#"><img src="images/store_badges.png" alt="Télécharger sur l'App Store"></a></li>
+			  	  </ul>
+			  	</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		  	<div class="col-sm-12">
+		  		<p>Copyright ©2014 <a href="http://pierre-mary.fr" title="Cyber forgeron" target="_blank">Pierre Mary</a></p>
+		  	</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	</div><!-- .row -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Leaflet controle location plugin -->
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.js'></script>
+
+	<script src="js/main-mapbox.js"></script>
+	
+
+	<!-- Include Leaflet 
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>-->
+    <!--<script src="js/map.js"></script>-->
+  </body>
+</html>
