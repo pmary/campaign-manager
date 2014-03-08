@@ -68,6 +68,10 @@ body{
 	width: 100%;
 }
 
+li{
+	list-style: none;
+}
+
 /**
  * 3.0 - Header
  */
@@ -225,7 +229,6 @@ body{
 }
 
 #home-section3 #download-app li{
-	list-style: none;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -234,4 +237,46 @@ body{
 	width: auto;
 	max-width: 320px;
 	max-height: 70px;
+}
+
+
+/* 4.2 - Home Admin */
+#home-admin{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#home-admin.row{
+	margin: 0px;
+}
+
+#home-admin #new-campagin-btn{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#home-admin #new-campagin-btn button{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#home-admin .panel button, #home-admin .panel a{
+	width: 100%;
+	border-radius: 0px;
+}
+
+#home-admin .panel a{
+	display: block;
+}
+
+#home-admin .panel a li{
+	border-bottom: 1px solid #dddddd;
+}
+
+#home-admin .panel a li:hover{
+	background-color: #EEEEEE;
+}
+
+#home-admin .panel a:hover{
+	text-decoration: none;
 }
