@@ -85,7 +85,7 @@
 	          </ul>
 	        </li>
 	    	-->
-	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><!--<span class="glyphicon glyphicon-user"></span>-->Se connecter</a></li>
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -108,131 +108,111 @@
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right cs-menu">
+	      	<li>
+	      	  <a href="#"><span class="glyphicon glyphicon-plus"></span> Nouveau don</a>
+	        </li>
+	        <li>
+	          <a href="#"><span class="glyphicon glyphicon-gift"></span> Mes dons <span class="badge">14</span></a>
+	        </li>
+	        <li>
+	        	<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Mes collectes <span class="badge">2</span></a>
+	        </li>
+	        <li>
+	        	<a href="#"><span class="glyphicon glyphicon-inbox"></span> Mon stock <span class="badge">0</span></a>
+	        </li>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 	
-	<!-- Home -->
-	<div class="row" id="home-section1">
-	  <div class="col-sm-12">
-	  	<h1>Pour une science ouverte et participative</h1>
-	  	<p>Nous lançons la première campagne massive de recyclage de matériel de laboratoire afin de diffuser les savoir et de permettre à tout de bénéficier de  prototyper leurs rêves</p>
-	  	<button type="button" class="btn btn-success btn-lg">Rejoindre la campagne</button>
-	  </div>
-	</div>
+	<!-- Home Admin -->
+	<div class="row" id="home-cs">
 
-	<div class="row" id="home-section2">
+		<div class="col-md-12">
 
-	  <h2>Comment nous aider ?</h2>
-
-	  <div class="col-sm-12">
-
-	  	<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-10" id="roles">
-				<div class="row">
-					<div class="col-sm-12 col-md-6 col-lg-3">
-					  	<div class="panel panel-info" id="role-porteur">
-					  	  <div class="panel-heading">Porteur de Paillasse</div>
-						  <div class="panel-body">
-						    <a href="#" class="thumbnailx130">
-				    		</a>
-				    		<p>Devenez absassadeur du réseau Paillasse et fondez un Open Lab dans votre région</p>
-						  </div>
-						</div>
+			<div class="row" id="alert-row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="alert alert-success alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<b>Merci</b>, grâce à vos efforts La Paillasse Paris a déjà atteint <b>80%</b> de ses objectifs !
 					</div>
-
-					<div class="col-sm-12 col-md-6 col-lg-3">
-					  	<div class="panel panel-info" id="role-donateur">
-					  	  	<div class="panel-heading">Donateur</div>
-						  	<div class="panel-body">
-						    <a href="#" class="thumbnailx130">
-				    		</a>
-				    		<p>Vous avez du matériel que vous ou votre laboratoire n'utilisez plus ? Offrez lui une seconde vie et faites une bonne action !</p>
-						  </div>
-						</div>
+					<!--
+					<div class="alert alert-info alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<b>Pierre</b>, une <a href="#"><b>nouvelle demande de récupération</b></a> vous a été adressée !
 					</div>
-
-					<div class="col-sm-12 col-md-6 col-lg-3">
-					  	<div class="panel panel-info" id="role-collecteur">
-					  	  	<div class="panel-heading">Collecteur</div>
-						  	<div class="panel-body">
-						    	<a href="#" class="thumbnailx130">
-				    			</a>
-				    			<p>Vous avez un moyens de transport et un peu de temps à offrir ? Aider nous à récupérer les trésors de nos généreux donateurs !</p>
-						  	</div>
-						</div>
+					<div class="alert alert-warning alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<b>Attention !</b> vous avez une <a href="#"><b>récupération</b></a> prévue demain :)
 					</div>
-
-					<div class="col-sm-12 col-md-6 col-lg-3">
-					  	<div class="panel panel-info" id="role-stockeur">
-					  		<div class="panel-heading">Stockeur</div>
-						  	<div class="panel-body">
-						    	<a href="#" class="thumbnailx130">
-				    			</a>
-				    			<p>Vous avez un peu d'espace libre ? Pourquoi ne pas en faire une caverne d'Ali Baba temporaire ?</p>
-						  	</div>
-						</div>
+					<div class="alert alert-danger alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<b>Hum, c'est embarrassant</b>... Il semblerait que vous ayez loupé la <a href="#"><b>récupération</b></a> prévue...
 					</div>
+					-->
 				</div>
 			</div>
 
-		</div><!-- .row -->
+			<div class="row" id="panel-row">
 
-	  </div><!-- .col-sm-12 -->
-	
-	</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Mes dons <span class="badge">14</span>
+					  </div>
+				  	<ul class="list-group">
+					    <a href="#"><li class="list-group-item"><b>Centrifugeuse</b> 10/04/2014 <span class="badge alert-info">en cours</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Fusée</b> 10/04/2014 <span class="badge alert-info">en cours</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Porte des étoiles</b> <span class="badge alert-info">en cours</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Microscope</b> <span class="badge alert-success">terminé</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Accélérateur de particule</b> <span class="badge alert-success">terminé</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Lance Jaffa</b> <span class="badge alert-warning">annulé</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Cailloux</b> <span class="badge alert-warning">annulé</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Découpeuse laser</b> <span class="badge alert-success">terminé</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Hélicopter</b> <span class="badge alert-success">terminé</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Marteau</b> <span class="badge alert-success">terminé</span></li></a>
+					    <li><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span></button></li>
+					  </ul>
+					</div>
+				</div>
 
-	<div class="row" id="home-section3">
-		<div class="col-sm-10">
-		  <div class="row">
-		  	<div class="col-sm-12">
-		  		<h2>Soyez mobiles</h2>
-		  	</div>
-		  </div>
-		  <div class="row">
-			<div class="col-sm-6">
-			  <div class="row">
-			  	<div class="col-sm-12">
-			  	  <img src="images/all-flat-devices-templates.png" alt="Soyez mobiles">
-			  	</div>
-			  </div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Mes collectes <span class="badge">2</span></div>
+					  <ul class="list-group">
+					    <a href="#"><li class="list-group-item"><b>Accélérateur de particule</b>, Paris <span class="badge alert-info">en cours</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Ordinateur quantique</b>, Bretagne <span class="badge alert-info">en cours</span></li></a>
+					    <a href="#"><li class="list-group-item"><b>Calculatrice casio</b>, Alsace <span class="badge alert-success">terminées</span></li></a>
+					    <li><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span></button></li>
+					  </ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Mon stock <span class="badge">0</span></div>
+					  <ul class="list-group">
+					    <li class="empty-li"><i>Vous n'avez aucun équipement en stock</i></li>
+					  </ul>
+					</div>
+				</div>
+
 			</div>
-			<div class="col-sm-6">
-			  <div class="row" id="download-app">
-			  	<div class="col-sm-12">
-			  	  <h3>Téléchargez l'application</h3>
-			  	  <ul>
-			  	  	<li><a href="#"><img src="images/google-play-badge.png" alt="Télécharger sur Google Play"></a></li>
-			  	  	<li><a href="#"><img src="images/store_badges.png" alt="Télécharger sur l'App Store"></a></li>
-			  	  </ul>
-			  	</div>
-			  </div>
-			</div>
-		  </div>
-		  <div class="row" id="footer">
+
+			<div class="row" id="footer">
 		  	<div class="col-sm-12">
 		  		<p>Copyright ©2014 <a href="http://pierre-mary.fr" title="Cyber forgeron" target="_blank">Pierre Mary</a></p>
 		  	</div>
 		  </div>
+
 		</div>
-	  </div>
-	  
-	</div><!-- .row -->
+
+	</div>
+			
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-	<!-- Leaflet controle location plugin -->
-    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.js'></script>
-
-	<script src="js/main-mapbox.js"></script>
-	
-
-	<!-- Include Leaflet 
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>-->
-    <!--<script src="js/map.js"></script>-->
   </body>
 </html>

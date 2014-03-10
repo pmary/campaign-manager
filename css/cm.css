@@ -72,6 +72,14 @@ li{
 	list-style: none;
 }
 
+.row{
+	margin: 0px;
+}
+
+#footer{
+	text-align: center;
+}
+
 /**
  * 3.0 - Header
  */
@@ -279,4 +287,57 @@ li{
 
 #home-admin .panel a:hover{
 	text-decoration: none;
+}
+
+
+/* 4.2 - Home CS */
+/*.cs-menu a.dropdown-toggle:hover, .cs-menu .open a{
+	background-color: #5CB85C !important;
+}*/
+
+.cs-menu .dropdown-menu .btn{
+	width: 100%;
+}
+
+#home-cs #alert-row{
+	text-align: center;
+	padding-top: 15px;
+}
+
+#home-cs #panel-row{
+	margin: 0px;
+}
+
+#home-cs #panel-row .panel a li{
+	border-bottom: 1px solid #dddddd;
+}
+
+#home-cs #new-campagin-btn button{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#home-cs .panel button, #home-cs .panel a{
+	width: 100%;
+	border-radius: 0px;
+}
+
+#home-cs .panel a{
+	display: block;
+}
+
+#home-cs .panel a li{
+	border-bottom: 1px solid #dddddd;
+}
+
+#home-cs .panel a li:hover{
+	background-color: #EEEEEE;
+}
+
+#home-cs .panel a:hover{
+	text-decoration: none;
+}
+
+#home-cs #panel-row .panel li.empty-li{
+	padding: 10px;
 }
