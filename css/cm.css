@@ -66,6 +66,7 @@ body{
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	background-color: #eaeaea;
 }
 
 li{
@@ -80,6 +81,18 @@ li{
 	text-align: center;
 }
 
+.panel-heading{
+	color: #ffffff !important;
+	background-color: #4c5869 !important;
+	border-radius: 0px;
+}
+
+#secondary-navbar .badge{
+	position: relative;
+	background-color: #D53F3F;
+	top: -10px;
+}
+
 /**
  * 3.0 - Header
  */
@@ -90,7 +103,7 @@ li{
 	height: 58px;
 	border: none;
 	border-color: rgba(0, 0, 0, 0);
-	background-color: #333333;
+	background-color: #333746;
 	border-radius: 0;
 	text-align: center;
 	z-index: 3;
@@ -118,7 +131,7 @@ li{
 	min-height: 44px;
 	height: 50px;
 	z-index: 2;
-	background-color: #008EB2;
+	background-color: #54a6d2;
 	color: #ffffff;
 	border: none;
 	border-radius: 0px;
@@ -179,7 +192,7 @@ li{
 
 #home-section2 .panel-heading{
 	text-align: center;
-	background-color: transparent;
+	background-color: transparent !important;
 	border: none;
 	font-size: 21px;
 	font-weight: bold;
@@ -310,16 +323,23 @@ li{
 
 #home-cs #panel-row .panel a li{
 	border-bottom: 1px solid #dddddd;
+	border-radius: 0px;
+}
+
+#home-cs #panel-row .panel .list-group a:last-child li{
+	border: none;
 }
 
 #home-cs #new-campagin-btn button{
 	margin-right: auto;
 	margin-left: auto;
+	border-radius: 0px;
 }
 
 #home-cs .panel button, #home-cs .panel a{
 	width: 100%;
 	border-radius: 0px;
+	background-color: #6ebeea;
 }
 
 #home-cs .panel a{
@@ -340,4 +360,50 @@ li{
 
 #home-cs #panel-row .panel li.empty-li{
 	padding: 10px;
+}
+
+/* 4.3 - Home gestionnaire */
+#home-gestionnaire .panel a li{
+	border-bottom: 1px solid #dddddd;
+	border-radius: 0px;
+}
+
+#home-gestionnaire .panel a li:hover{
+	background-color: #EEEEEE;
+}
+
+#home-gestionnaire .list-group button{
+	width: 100%;
+	border-radius: 0px;
+}
+
+/* 4.1 - Gestionnaire - Participants */
+#home-gestionnaire .thumbnail img{
+	height: 64px;
+	width: 64px;
+	border-radius: 35px;
+	background-color: #666;
+	border: 31px solid #666;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#home-gestionnaire #btn-filter-container{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#home-gestionnaire #btn-filter-container .col-md-12{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#home-gestionnaire #btn-filter-container .input-group{
+	padding-top: 10px;
+	max-width: 320px;
+	margin-right: auto;
+	margin-left: auto;
 }

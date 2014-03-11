@@ -121,56 +121,109 @@
 
 		<div class="col-md-12">
 
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<h3>Etat des objectifs de la campagne</h3>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-					    60%
-					  </div>
+			<div class="row" id="btn-filter-container">
+
+				<div class="col-md-12">
+					<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-primary">
+					    <input type="checkbox"> Collecteurs
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox"> Donateurs
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox"> Stockeurs
+					  </label>
 					</div>
 				</div>
+
+				<div class="col-md-12">
+					<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Rechercher un participant">
+				      <div class="input-group-btn">
+				        <button class="btn btn-default" type="button">Go!</button>
+				      </div><!-- /btn-group -->
+				    </div><!-- /input-group -->
+				</div>
+
 			</div>
 
 			<div class="row">
 
-				<div class="col-md-6">
-					<div class="panel panel-default">
-					  <div class="panel-heading">
-					  	<span class="glyphicon glyphicon-gift"></span> Donations <span class="badge">16</span>
-					  </div>
-				  	<ul class="list-group">
-					    <a href="#"><li class="list-group-item"><b>En cours </b>: 10</li></a>
-					    <a href="#"><li class="list-group-item"><b>J-1</b>: 1</li></a>
-					    <a href="#"><li class="list-group-item"><b>J-7</b>: 1</li></a>
-					    <a href="#"><li class="list-group-item"><b>En stock </b>: 2</li></a>
-					    <a href="#"><li class="list-group-item"><b>Transférés au hacklab </b>: 2</li></a>
-					    <li><button type="button" class="btn btn-info">Détails</button></li>
-					  </ul>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="panel panel-default">
-					  <div class="panel-heading">
-					  	<span class="glyphicon glyphicon-inbox"></span>
-					  	Participants <span class="badge">0</span>
-					  </div>
-					  <ul class="list-group">
-					  	<a href="#"><li class="list-group-item"><b>10 </b>collecteurs</li></a>
-					  	<a href="#"><li class="list-group-item"><b>5 </b>stockeurs</li></a>
-					  	<li><button type="button" class="btn btn-info">Détails</button></li>
-					  </ul>
-					</div>
-				</div>
-
-				<div class="row" id="footer">
-				  	<div class="col-sm-12">
-				  		<p>Copyright ©2014 <a href="http://pierre-mary.fr" title="Cyber forgeron" target="_blank">Pierre Mary</a></p>
-				  	</div>
-				</div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/64x64" alt="...">
+			      <div class="caption">
+			        <h3>Paul Michel</h3>
+			        <p>Collecteur / stockeur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Etienne Churos</h3>
+			        <p>Collecteur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Martin Botaux</h3>
+			        <p>Stockeur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Lorem Ipsum</h3>
+			        <p>Donateur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Dolor Sit</h3>
+			        <p>Collecteur/Stockeur/Donateur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
 
 			</div>
+
+		  <div class="row" id="footer">
+		  	<div class="col-sm-12">
+		  		<p>Copyright ©2014 <a href="http://pierre-mary.fr" title="Cyber forgeron" target="_blank">Pierre Mary</a></p>
+		  	</div>
+		  </div>
+		
 		</div>
 	</div>
 			
