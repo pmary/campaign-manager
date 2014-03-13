@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campaign Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Campaign Manager -->
+    <link rel="stylesheet" href="../css/cm.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+  </head>
+  <body>
+
+  	<!-- Primary Navbar -->
+  	<nav class="navbar navbar-default" role="navigation" id="primary-navbar">
+  	  <a class="navbar-brand" id="ecosystem-name" href="#">Mayall</a>
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <!--<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>-->
+	        </li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span></a></li>
+	      	<!--
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Maxime veut rejoindre votre communauté</p>
+				  </a>
+				</li>
+	            <li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Marc vous a envoyé un message</p>
+				  </a>
+				</li>
+				<li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Lerem Ipsum</p>
+				  </a>
+				</li>
+				<li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Dolor Sit amen</p>
+				  </a>
+				</li>
+	          </ul>
+	        </li>
+	    	-->
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Secondary navbar -->
+	<nav class="navbar navbar-default" role="navigation" id="secondary-navbar">
+	<a class="navbar-brand" id="application-name" href="#">Campaign Manager</a>
+	  <div class="container-fluid">
+	    <!-- Toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#"><span class="glyphicon glyphicon-gift"></span> Donations <span class="badge">5</span></a></li>
+	      	<li><a href="#"><span class="glyphicon glyphicon-inbox"></span> En stock <span class="badge">2</span></a></li>
+	      	<li><a href="#"><span class="glyphicon glyphicon-inbox"></span> Participants</a></li>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<!-- Home Admin -->
+	<div class="row" id="home-gestionnaire">
+
+		<div class="col-xs-12 col-md-8 col-xs-offset-0 col-md-offset-2">
+			<ol class="breadcrumb">
+			  <li><a href="#">Accueil</a></li>
+			  <li class="active">Participants</li>
+			</ol>
+		</div>
+
+		<div class="col-md-12">
+
+			<div class="row" id="btn-filter-container">
+
+				<div class="col-md-12">
+					<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-primary">
+					    <input type="checkbox"> Collecteurs
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox"> Donateurs
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="checkbox"> Stockeurs
+					  </label>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Rechercher un participant">
+				      <div class="input-group-btn">
+				        <button class="btn btn-default" type="button">Go!</button>
+				      </div><!-- /btn-group -->
+				    </div><!-- /input-group -->
+				</div>
+
+			</div>
+
+			<div class="row">
+
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/64x64" alt="...">
+			      <div class="caption">
+			        <h3>Paul Michel</h3>
+			        <p>Collecteur / stockeur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Etienne Churos</h3>
+			        <p>Collecteur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Martin Botaux</h3>
+			        <p>Stockeur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Lorem Ipsum</h3>
+			        <p>Donateur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-4 col-md-3 col-lg-2">
+			    <div class="thumbnail">
+			      <img data-src="holder.js/300x200" alt="...">
+			      <div class="caption">
+			        <h3>Dolor Sit</h3>
+			        <p>Collecteur/Stockeur/Donateur</p>
+			        <p>
+			          <a href="#" class="btn btn-info" role="button">Infos</a> 
+			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+
+		  <div class="row" id="footer">
+		  	<div class="col-sm-12">
+		  		<p>Copyright ©2014 <a href="http://pierre-mary.fr" title="Cyber forgeron" target="_blank">Pierre Mary</a></p>
+		  	</div>
+		  </div>
+		
+		</div>
+	</div>
+			
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Leaflet controle location plugin -->
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.js'></script>
+
+	<script src="js/main-mapbox.js"></script>
+	
+
+	<!-- Include Leaflet 
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>-->
+    <!--<script src="js/map.js"></script>-->
+  </body>
+</html>

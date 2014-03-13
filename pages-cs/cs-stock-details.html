@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campaign Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Campaign Manager -->
+    <link rel="stylesheet" href="../css/cm.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+  </head>
+  <body>
+
+  	<!-- Primary Navbar -->
+  	<nav class="navbar navbar-default" role="navigation" id="primary-navbar">
+  	  <a class="navbar-brand" id="ecosystem-name" href="#">Mayall</a>
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <!--<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>-->
+	        </li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span></a></li>
+	      	<!--
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Maxime veut rejoindre votre communauté</p>
+				  </a>
+				</li>
+	            <li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Marc vous a envoyé un message</p>
+				  </a>
+				</li>
+				<li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Lerem Ipsum</p>
+				  </a>
+				</li>
+				<li>
+	              <a href="#" class="list-group-item">
+				    <p class="list-group-item-text">Dolor Sit amen</p>
+				  </a>
+				</li>
+	          </ul>
+	        </li>
+	    	-->
+	      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Secondary navbar -->
+	<nav class="navbar navbar-default" role="navigation" id="secondary-navbar">
+	<a class="navbar-brand" id="application-name" href="cs.html">Campaign Manager</a>
+	  <div class="container-fluid">
+	    <!-- Toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right cs-menu">
+	      	<li>
+	      	  <a href="#"><span class="glyphicon glyphicon-plus"></span> Nouveau don</a>
+	        </li>
+	        <li>
+	          <a href="#"><span class="glyphicon glyphicon-gift"></span> Mes dons <span class="badge">14</span></a>
+	        </li>
+	        <li>
+	        	<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Mes collectes <span class="badge">2</span></a>
+	        </li>
+	        <li>
+	        	<a href="cs-stock.html"><span class="glyphicon glyphicon-inbox"></span> Mon stock <span class="badge">0</span></a>
+	        </li>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<!-- Home Admin -->
+	<div class="row" id="cs-stock-details">
+
+		<div class="col-md-12">
+			<div class="row" id="btn-filter-container">
+				<div class="col-xs-12 col-md-8 col-xs-offset-0 col-md-offset-2">
+					<ol class="breadcrumb">
+					  <li><a href="cs-home.html">Accueil</a></li>
+					  <li><a href="cs-stock.html">Mon stock</a></li>
+					  <li class="active">Centrifugeuse</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="row">
+
+			  <div class="col-xs-12 col-sm-10 col-xs-offset-0 col-md-offset-1">
+					<h1>Centrifugeuse</h1>
+
+					<div class="row" id="materiel-details-container">
+
+						<div class="col-xs-12 col-sm-10 col-xs-offset-0 col-md-offset-1">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							  	<span class="glyphicon glyphicon-inbox"></span> Détails <span class="badge"></span>
+							  </div>
+						  	  <ul class="list-group">
+							    <li class="list-group-item"><b>Date récupération</b> : 15/02/2014</li>
+							    <li class="list-group-item"><b>Dimensions</b> : 120cm / 20cm</li>
+							    <li class="list-group-item"><b>Poids</b> : 1,2Kg</li>
+							    <li class="list-group-item"><b>Etat</b> : Neuf</li>
+							    <li>
+							    	<button type="button" class="btn btn-info">Transféré au labo</button>
+									<button type="button" class="btn btn-danger" id="btn-ban">Supprimer</button>
+							    </li>
+							  </ul>
+							</div>
+						</div>
+
+      				</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-xs-offset-0 col-md-offset-1">
+							<div class="materiel-thumbnail">
+      							<a href="#"><img data-src="holder.js/300x200" alt="..."></a>
+      							<a href="#"><img data-src="holder.js/300x200" alt="..."></a>
+      							<a href="#"><img data-src="holder.js/300x200" alt="..."></a>
+      						</div>
+      					</div>
+      				</div>
+
+			  </div>
+
+			</div>
+
+		  <div class="row" id="footer">
+		  	<div class="col-sm-12">
+		  		<p>Copyright ©2014 <a href="http://pierre-mary.fr" title="Cyber forgeron" target="_blank">Pierre Mary</a></p>
+		  	</div>
+		  </div>
+		
+		</div>
+	</div>
+			
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

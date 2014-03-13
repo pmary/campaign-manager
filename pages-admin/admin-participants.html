@@ -7,10 +7,10 @@
     <title>Campaign Manager</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Campaign Manager -->
-    <link rel="stylesheet" href="css/cm.css">
+    <link rel="stylesheet" href="../css/cm.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -109,15 +109,22 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="#"><span class="glyphicon glyphicon-gift"></span> Donations <span class="badge">5</span></a></li>
-	      	<li><a href="#"><span class="glyphicon glyphicon-inbox"></span> En stock <span class="badge">2</span></a></li>
-	      	<li><a href="#"><span class="glyphicon glyphicon-inbox"></span> Participants</a></li>
+	      	<li><a href="#"><span class="glyphicon glyphicon-flag"></span> Campagnes <span class="badge">5</span></a></li>
+	      	<li><a href="#"><span class="glyphicon glyphicon-gift"></span> Donations <span class="badge">42</span></a></li>
+	      	<li><a href="#"><span class="glyphicon glyphicon-tower"></span> Membres <span class="badge">18</span></a></li>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 	
 	<!-- Home Admin -->
 	<div class="row" id="home-gestionnaire">
+
+		<div class="col-xs-12 col-md-8 col-xs-offset-0 col-md-offset-2">
+			<ol class="breadcrumb">
+			  <li><a href="#">Accueil</a></li>
+			  <li class="active">Participants</li>
+			</ol>
+		</div>
 
 		<div class="col-md-12">
 
@@ -135,6 +142,11 @@
 					    <input type="checkbox"> Stockeurs
 					  </label>
 					</div>
+					<select class="form-control input-sm">
+						<option value="1">La Paillasse Lyon</option>
+						<option value="1">La Paillasse Bordeau</option>
+						<option value="1">CogLab</option>
+					</select>
 				</div>
 
 				<div class="col-md-12">
@@ -156,6 +168,7 @@
 			      <div class="caption">
 			        <h3>Paul Michel</h3>
 			        <p>Collecteur / stockeur</p>
+			        <p>Campagne : La Paillasse Paris</p>
 			        <p>
 			          <a href="#" class="btn btn-info" role="button">Infos</a> 
 			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
@@ -169,6 +182,7 @@
 			      <div class="caption">
 			        <h3>Etienne Churos</h3>
 			        <p>Collecteur</p>
+			        <p>Campagne : CogLab</p>
 			        <p>
 			          <a href="#" class="btn btn-info" role="button">Infos</a> 
 			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
@@ -182,6 +196,7 @@
 			      <div class="caption">
 			        <h3>Martin Botaux</h3>
 			        <p>Stockeur</p>
+			        <p>Campagne : Mozinor</p>
 			        <p>
 			          <a href="#" class="btn btn-info" role="button">Infos</a> 
 			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
@@ -195,6 +210,7 @@
 			      <div class="caption">
 			        <h3>Lorem Ipsum</h3>
 			        <p>Donateur</p>
+			        <p>Campagne : La Paillasse Lyon</p>
 			        <p>
 			          <a href="#" class="btn btn-info" role="button">Infos</a> 
 			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
@@ -208,6 +224,7 @@
 			      <div class="caption">
 			        <h3>Dolor Sit</h3>
 			        <p>Collecteur/Stockeur/Donateur</p>
+			        <p>Campagne : La Paillasse Bordeaux</p>
 			        <p>
 			          <a href="#" class="btn btn-info" role="button">Infos</a> 
 			          <a href="#" class="btn btn-danger" role="button">Bannir</a>
